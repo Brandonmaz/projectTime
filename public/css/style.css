@@ -1,0 +1,319 @@
+
+body {
+  color: ghostwhite;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0)), url("https://wallpapercave.com/wp/wp2623648.jpg");
+}
+
+img {
+  box-shadow: 0 8px 8px 0 rgba(255, 255, 255, 0.3), 5px 8px 8px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.navbar {
+  margin: 20px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.6);
+}
+.container-fluid {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #0d6efd45;
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3), 5px 12px 40px 5px rgba(255, 255, 255, 0.2);
+}
+.logOut {
+  margin: -20px;
+}
+
+/*  CAROUSEL
+-------------------------------------------------- */
+
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+.carousel-item {
+  height: 40rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.marketing .col-lg-4 p {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.bd-placeholder-img {
+  margin-top: 6rem;
+}
+.tables{
+  border-radius: 5px;
+}
+.col-md-7 {
+  padding: 30px;
+}
+
+.btn-secondary {
+  color: ghostwhite;
+  font-size: 30px;
+  line-height: 30px;
+  padding: 18px;
+  border-radius: 10px;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: radial-gradient(at center center, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 49%, rgb(20, 78, 117) 100%);
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+}
+.btn-secondary:hover {
+  background: black;
+  background-image: radial-gradient(at center center, rgb(94, 94, 94) 0%, rgb(27, 27, 27) 49%, rgb(0, 0, 0) 100%);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3), 5px 12px 40px 5px rgba(255, 255, 255, 0.2);
+}
+.btn-secondary:active {
+  background: black;
+  background-image: radial-gradient(at center center, rgb(94, 94, 94) 0%, rgb(27, 27, 27) 49%, rgb(0, 0, 0) 100%);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3), 5px 12px 40px 5px rgba(255, 255, 255, 0.2);
+  transform: translateY(4px);
+}
+.logOut {
+  text-decoration: none;
+  color: lightgrey;
+  background-color: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.logOut:hover {
+  color: #96969696;
+}
+
+.icon {
+  box-shadow: rgba(0, 0, 0, 0);
+  border-radius: 50px;
+
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 7rem;
+  border: 10px solid #0d6efd45;
+}
+.featurette {
+  border: none;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+.featurette-image {
+  box-shadow: 0 8px 8px 0 rgba(255, 255, 255, 0.3), 5px 8px 8px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* flip box action */
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 15rem auto;
+  direction: row;
+}
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-image: linear-gradient(#ca4a2d, #ec9d33);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.3), 5px 12px 40px 5px rgba(255, 255, 255, 0.2);
+  color: ghostwhite;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+
+/* =================== Index Page for both============== */
+.album {
+  background-color: none;
+}
+.card-text {
+  color: steelblue;
+}
+/* .text-center {
+  margin: 15rem auto 0 auto ;
+} */
+
+div > .col {
+  padding: 20px;
+  margin: -5rem 0 3rem auto;
+}
+.nameText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow:
+		-1px -1px 0 lightgrey,
+		1px -1px 0 lightgrey,
+		-1px 1px 0 lightgrey,
+		1px 1px 0 lightgrey;
+  letter-spacing: 2px;
+}
+.btn-outline-secondary {
+  color: #06946a;
+  border-color: #06946a;
+}
+.btn-outline-secondary:hover {
+  background-color: #06946a;
+}
+
+/* =================== Show Page for both============== */
+
+.a-button {
+  text-decoration: none;
+  color: #06946a;
+}
+.a-button:hover {
+  color: ghostwhite;
+}
+
+/* ========================== EDIT Page =========================== */
+
+.edit-container {
+  font-family: 'Nunito', sans-serif;
+  color: steelblue;
+  width: 60vw;
+  height: 90vw;
+  margin: 15rem auto;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #bbb, -2px -2px 10px #bbb, 2px -2px 10px #bbb, -2px 2px 10px #bbb;
+}
+.edit-page {
+  width: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.field-body {
+  background-color: rgba(70,130,180,0.3);
+  font-family: 'Nunito', sans-serif;
+  width: 95%;
+  border-radius: 5px;
+  display: flex;
+  padding: 15px;
+  margin: 20px 0;
+  box-shadow: 2px 2px 10px #bbb, -2px -2px 10px #bbb, 2px -2px 10px #bbb, -2px 2px 10px #bbb;
+}
+fieldset {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin: 20px 0;
+}
+legend {
+  padding: 0 10px;
+  font-weight: 500;
+}
+label {
+  font-weight: 200;
+  display: block;
+}
+input, textarea {
+  background-color: lightgrey;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid steelblue;
+  border-radius: 5px;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border: 1px solid steelblue;
+}
+input[type="submit"] {
+  padding: 20px;
+  margin: 10px 10px 10px 80px;
+  width: 80%;
+  text-decoration: none;
+  color: #06946a;
+  display: inline-block;
+  transition: 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  color: ghostwhite;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  height: 100px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: .5rem;
+    font-size: .5rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}

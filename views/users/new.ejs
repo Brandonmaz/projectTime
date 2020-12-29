@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="div-body">
+      <fieldset class="field-body">
+        <legend><h1>Life</h1></legend>
+      </fieldset>
+    </div>
+    <div class="container">
+      <div class="sidebar"></div>
+      <div class="clix-page">
+        <fieldset class="clix-info">
+          <h1>New User</h1>
+          <form action="/users" method="POST">
+            <label for="name">User Name</label>
+            <input type="text" name="username" required/>
+            <label for="color">Password</label>
+            <input type="password" name="password" />
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </fieldset>
+    </div>
+  </body>
+</html>
