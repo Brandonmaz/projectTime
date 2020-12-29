@@ -25,9 +25,9 @@ app.use(session(
     saveUnitialized: false
   })
 )
-// app.get('/', (req, res) => {
-//   res.send('Hello World')
-// })
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
 
 //===========================DATABASE=======================
 mongoose.connect(MONGODB_URI,
