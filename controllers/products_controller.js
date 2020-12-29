@@ -11,6 +11,7 @@ const isAuthenticated = (req, res, next) => {
     res.redirect('/sessions/new')
   }
 }
+// testing
 //==========================BUY===============================
 products.put('/buy/:id', (req, res) => {
   Product.findByIdAndUpdate(req.params.id, {$inc:{qty: -1}}, (error, update) => {
