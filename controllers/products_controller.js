@@ -12,12 +12,7 @@ const isAuthenticated = (req, res, next) => {
   }
 }
 // testing
-//==========================BUY===============================
-products.put('/buy/:id', (req, res) => {
-  Product.findByIdAndUpdate(req.params.id, {$inc:{qty: -1}}, (error, update) => {
-  })
-  res.redirect('/products/' + req.params.id)
-})
+
 
 //============================Main==============================
 products.get('/', (req, res) => {
@@ -30,18 +25,6 @@ products.get('/', (req, res) => {
     })
   })
 })
-//============================NEW==================================
-
-
-
-//================================CREATE=============================
-products.post('/', (req, res) => {
-  Product.create(req.body, (error, foundProduct) => {
-    res.redirect('/products')
-  })
-})
-
-//=================================SHOW===============================
 
 
 //===================================================================

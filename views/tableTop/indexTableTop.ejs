@@ -56,8 +56,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <!-- Custom styles for this template -->
-
-    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
 
 
   </head>
@@ -71,9 +72,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="/products/">Home</a>
-              </li>
+
                 <% if(currentUser){ %>
                   <!-- <h4>Welcome, <%= currentUser.username%></h4> -->
                   <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
@@ -83,10 +82,8 @@
                           Dropdown
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <li><a class="dropdown-item" href="/products/newTableTop">New Tabletop Simulator</a></li>
-                          <li><a class="dropdown-item" href="/products/newTableTopia">New Tabletopia</a></li>
-                          <li><a class="dropdown-item" href="/products/edit">Edit</a></li>
-                          <li><a class="dropdown-item" href="/products/seed/newProducts">Seed</a></li>
+                          <li><a class="dropdown-item" href="/tableTop/newTableTop">New Tabletop Simulator</a></li>
+                          <li><a class="dropdown-item" href="/tableTop/seed/newProducts">Seed Tabletop Simulator</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -144,10 +141,10 @@
         <% for(let i = 0; i < tableTop.length; i++){%>
         <div class="col">
           <div class="">
-            <img class="bd-placeholder-img card-img-top" src="<%=tableTop[i].img%>"width="100%" height="325px"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text class="nameText" x="50%" y="50%" dy=".3em"><%=tableTop[i].name%></text></img>
+            <img class="bd-placeholder-img card-img-top" src="<%=tableTop[i].img%>"width="100%" height="auto"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><text class="nameText" x="50%" y="50%" dy=".3em"><%=tableTop[i].name%></text></img>
 
             <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Please feel free to edit, create, seed, and have fun with my webpage. I just ask that you keep the content PG and on topic. Thank you.</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary"><a class="a-button" href="/tableTop/<%=tableTop[i].id%>/showTableTop/">View</a></button>
@@ -165,11 +162,9 @@
 
 </main>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-  </div>
+<footer class="container">
+  <p class="float-end"><a href="#">Back to top</a></p>
+  <p>&copy; 2020 Life, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 </footer>
 
 

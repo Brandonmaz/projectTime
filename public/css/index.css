@@ -1,0 +1,37 @@
+
+.album {
+  background-color: none;
+}
+.card-text {
+  color: steelblue;
+}
+.nav-item {
+  margin-top: 22px;
+}
+/* .text-center {
+  margin: 15rem auto 0 auto ;
+} */
+
+div > .col {
+  padding: 20px;
+  margin: -5rem 0 3rem auto;
+}
+.nameText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-shadow:
+		-1px -1px 0 lightgrey,
+		1px -1px 0 lightgrey,
+		-1px 1px 0 lightgrey,
+		1px 1px 0 lightgrey;
+  letter-spacing: 2px;
+}
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 9rem auto;
+  direction: row;
+}

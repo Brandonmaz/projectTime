@@ -1,0 +1,31 @@
+
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+  margin-bottom: 5rem;
+  direction: row;
+}
+.show-page {
+  color: grey;
+}
+form {
+  text-align: center;
+}
+h1 {
+  text-decoration: underline;
+  color: steelblue;
+}
+.edit-info {
+  color: steelblue;
+}
+@media (min-width: 1200px) {
+  /* Bump up size of carousel content */
+  .flip-container {
+    margin-bottom: 10rem;
+  }
+  .carousel-item {
+    height: 70rem;
+    width: 70rem;
+  }
