@@ -35,3 +35,7 @@ div > .col {
   margin: 9rem auto;
   direction: row;
 }
+img > .card-img-top {
+  width: 325px;
+  height: 325px;
+}
