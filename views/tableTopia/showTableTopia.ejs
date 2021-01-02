@@ -49,7 +49,7 @@
   <body>
 <!-- Nav Bar --------------------->
 <header>
-  <% if(currentUser){ %>
+
   <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Life</a>
@@ -61,6 +61,7 @@
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="/products">Home</a>
           </li>
+            <% if(currentUser){ %>
               <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                 <form class="logOut"action="/sessions?_method=DELETE" method="post">
                   <input class="logOut" type="submit" name="" value="Log Out">
