@@ -17,6 +17,9 @@
   margin-top: 7rem;
   direction: row;
 }
+.btn-secondary{
+  margin-top: -20rem;
+}
 .show-page {
   color: grey;
 }
