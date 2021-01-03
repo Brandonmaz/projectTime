@@ -2,13 +2,14 @@ const mongoose = require('mongoose')
 const tableTopiaSchema = new mongoose.Schema(
   {
     name: {type: String, required: true},
-    img: String,
-    img1: String,
-    img2: String,
-    img3: String,
-    description: {type: String},
+    img: {type: String, required: true},
+    img1: {type: String, required: true},
+    img2: {type: String, required: true},
+    img3: {type: String, required: true},
+    players: {type: String} || {type: Number},
+    description: {type: String, required: true},
     price: {type: String} || {type: Number},
-    qty: {type: String }
+    qty: {type: Number, min: 0, required: true }
   })
   const TableTopia = mongoose.model('TableTopia', tableTopiaSchema)
 
