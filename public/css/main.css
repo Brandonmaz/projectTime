@@ -1,0 +1,26 @@
+.carousel-image {
+  width: 350px;
+  height: 250px;
+}
+.carousel-item {
+  /* margin-top: -3rem; */
+}
+.carousel{
+  margin-left: -3.5rem;
+}
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* padding: 5px; */
+  margin-bottom: 15rem;
+  margin-top: 7rem;
+  direction: row;
+}
+.flip-box-front, .flip-box-back, .flip-box-front > img {
+  width: 200px;
+  height: 200px
+}
+.btn-secondary{
+  margin-top: -3rem;
+}

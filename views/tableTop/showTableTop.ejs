@@ -146,14 +146,6 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </a>
         </div>
     </div>
 
@@ -173,7 +165,7 @@
       </fieldset>
       </form>
       <% if(tableTop.qty <= 0){ %>
-        <h5>OUT OF STOCK</h5>
+        <h2 class="edit-page">OUT OF STOCK</h2>
       <% } else{ %>
       <form action="/tableTop/buy/<%=tableTop._id%>?_method=PUT" method="POST">
 

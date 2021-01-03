@@ -13,29 +13,31 @@ body {
   margin-bottom: 4rem;
 }
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 5rem;
   z-index: 10;
 }
 .carousel-item {
   height: 32rem;
+
 }
-.carousel-image {
+/* .carousel-image {
   width: 100%;
   height: 100%;
-}
+} */
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 900px) {
+@media (min-width: 794px) {
   /* Bump up size of carousel content */
   /* .carousel-item {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   } */
-  .carousel-image{
-    height: 500px;
+  .carousel-image {
+    width: 100%;
+    height: 100%;
   }
 
   .featurette-heading {
@@ -43,8 +45,10 @@ body {
   }
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+@media (min-width: 981) {
+  .carousel-image {
+    width: 400px;
+    height: 400px;
   }
+
 }
