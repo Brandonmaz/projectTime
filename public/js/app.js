@@ -2,7 +2,7 @@
 // console.log('hello');
 $(() => {
     const formTest =
-      $('form[role=search] input').on('submit', (event) => {
+      $('form').on('submit', (event) => {
         event.preventDefault()
         const userInput = $('input').val()
         console.log(userInput);
