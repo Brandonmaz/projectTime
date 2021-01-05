@@ -14,42 +14,58 @@ const isAuthenticated = (req, res, next) => {
   }
 }
 //=============Searchable API==================
-// https://jonathanmh.com/building-a-simple-searchable-api-with-express-backend/
+
 products.get('/api', (req, res) => {
   var response = []
-  if(typeof req.query.name != 'undefined'){
-    product.filter(function(product){
-      if(product.name.toLowerCase() === req.query.name.toLowerCase()){
-        response.push(product)
-      }
-    })
+  if(req.query.qty){
+    if(typeof req.query.qty.toString() != 'undefined'){
+      product.filter(function(product){
+        if(product.qty.toString() === req.query.qty.toString()){
+          response.push(product)
+        }
+      })
+    }
+  }else if(req.query.price){
+    if(typeof req.query.price.toString() != 'undefined'){
+      product.filter(function(product){
+        if(product.price.toString() === req.query.price.toString()){
+          response.push(product)
+        }
+      })
+    }
+  }else{
+    if(typeof req.query.name != 'undefined'){
+      product.filter(function(product){
+        if(product.name.toLowerCase() === req.query.name.toLowerCase()){
+          response.push(product)
+        }
+      })
+    }
+    if(typeof req.query.players != 'undefined'){
+      product.filter(function(product){
+        if(product.players === req.query.players){
+          response.push(product)
+        }
+      })
+    }
+    if(typeof req.query.company != 'undefined'){
+      product.filter(function(product){
+        if(product.company.toLowerCase() === req.query.company.toLowerCase()){
+          response.push(product)
+        }
+      })
+    }
+
   }
-  response = _.uniqBy(response, 'id')
+
+
+  response = _.uniqBy(response)
 
   if(Object.keys(req.query).length === 0){
     response = product
   }
   res.json(response)
 })
-// ===================== Search Bar jQuery =================
-// $(() => {
-//     const formTest =
-//       $('form').on('submit', (event) => {
-//         event.preventDefault()
-//         const userInput = $('input').val()
-//       })
-//     $.ajax({
-//       url: `https://products/api/name=` + userInput + ``,
-//       type: "GET"
-//     }).then(
-//       (data) => {
-//       }, (error) => {
-//       alert(`Please check your spelling and try again`)
-//       console.log(`${error.statusText.toUpperCase()}:bad request`);
-//     }
-//   )
-// })
-
 
 //============================Main==============================
 products.get('/', (req, res) => {

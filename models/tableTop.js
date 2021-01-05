@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const tableTopSchema = new mongoose.Schema(
   {
     name: {type: String, required: true},
+    company: {type: String},
     img: {type: String, required: true},
     img1: {type: String, required: true},
     img2: {type: String, required: true},
