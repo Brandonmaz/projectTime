@@ -13,7 +13,9 @@ $(() => {
       (data) => {
           console.log(data)
 
-          const $div = $('<div>').appendTo('.body')
+          for(let i = 0; i < data.length; i++){
+            console.log(data.name);
+          }
 
     }, (error) => {
       alert(`You must have spelled something wrong. Please check your spelling and try again`)
