@@ -15,7 +15,7 @@ $(() => {
           console.log(data)
 
           for(let i = 0; i < data.length; i++){
-            console.log(data.results[i].name)
+            console.log(data[i].name)
             // const $name = $('<div>').text(data[i].name)
             // $name.append('.body')
 
