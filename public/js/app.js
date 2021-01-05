@@ -1,8 +1,8 @@
 // ===================== Search Bar jQuery =================
-console.log('hello');
+// console.log('hello');
 $(() => {
     const formTest =
-      $('form').on('submit', (event) => {
+      $('form[role=search]').on('submit', (event) => {
         event.preventDefault()
         const userInput = $('input').val()
         console.log(userInput);
