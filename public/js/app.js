@@ -8,14 +8,15 @@ $(() => {
         console.log(userInput);
     $.ajax({
       url: `https://nextstepinlife.herokuapp.com/products/api?name=` + userInput + ``,
-      
+
       type: "GET"
     }).then(
       (data) => {
           console.log(data)
 
           for(let i = 0; i < data.length; i++){
-            console.log(data[i].name);
+            console.log(data[i].name)
+            console.log(data[i]._id);
           }
 
     }, (error) => {
