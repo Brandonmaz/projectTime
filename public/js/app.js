@@ -7,8 +7,8 @@ $(() => {
         const userInput = $('input').val()
         console.log(userInput);
     $.ajax({
-      // url: `https://nextstepinlife.herokuapp.com/products/api?name=` + userInput + ``,
-      url: `127.0.0.1:3000/products/api?name=${userInput}`,
+      url: `https://nextstepinlife.herokuapp.com/products/api?name=` + userInput + ``,
+      
       type: "GET"
     }).then(
       (data) => {
