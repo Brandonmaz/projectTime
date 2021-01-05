@@ -16,7 +16,9 @@ $(() => {
 
           for(let i = 0; i < data.length; i++){
             console.log(data[i].name)
-            console.log(data[i].id);
+            const $name = $('<div>').text(data[i].name)
+            $name.append('.body')
+
           }
 
     }, (error) => {
