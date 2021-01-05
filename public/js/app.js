@@ -8,7 +8,8 @@ $(() => {
         console.log(userInput);
     $.ajax({
       url: `https://nextstepinlife.herokuapp.com/products/api?name=` + userInput + ``,
-
+      url: `https://nextstepinlife.herokuapp.com/tableTop/api?name=` + userInput + ``,
+      url: `https://nextstepinlife.herokuapp.com/tableTopia/api?name=` + userInput + ``,
       type: "GET"
     }).then(
       (data) => {
