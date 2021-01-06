@@ -83,12 +83,14 @@
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                           <li><a class="dropdown-item" href="/tableTop/newTableTop">New Tabletop Simulator</a></li>
                           <li><a class="dropdown-item" href="/tableTop/seed/newProducts">Seed Tabletop Simulator</a></li>
+                          <li>
+                            <form class="logOut"action="/sessions?_method=DELETE" method="POST">
+                              <input class="logOut" type="submit" value="Log Out">
+                            </form>
+                          </li>
                         </ul>
                       </li>
                     </ul>
-                    <form action="/sessions?_method=DELETE" method="post">
-                      <input class="logOut" type="submit" name="" value="Log Out">
-                    </form>
                 <%}else{%>
                   <li class="nav-item">
                     <a class="nav-link" href="/users/new">SignUp</a>
@@ -97,12 +99,17 @@
                     <a class="nav-link" href="/sessions/new">LogIn</a>
                   </li>
                 <%}%>
+                <li>
+                  <a href="https://www.linkedin.com/in/brandonmazikowski?trk=profile-badge" target="_blank">
+                  <button class="btn btn-outline-success" id="linkedin">Linkedin</button>
+                  </a>
+                </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" id="apiForm">
               <% if(currentUser){%>
-              <input class="form-control me-2" type="search" placeholder="Welcome <%= currentUser.username%>" aria-label="Search">
+              <input class="form-control me-2 searchInput" type="search" placeholder="Welcome <%= currentUser.username%>" aria-label="Search">
               <%}else{%>
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2 searchInput" type="search" placeholder="Search" aria-label="Search">
                 <%}%>
               <button class="btn btn-outline-success">Search</button>
             </form>

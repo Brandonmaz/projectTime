@@ -2,12 +2,12 @@
 // console.log('hello');
 
 $(() => {
-      const formTest =
-        $('form').on('submit', (event) => {
+  const $apiForm = $('#apiForm')
+        $($apiForm).on('submit', (event) => {
           event.preventDefault()
-          const userInput = $('input').val()
+          const userInput = $('.searchInput').val()
           // console.log(userInput);
-          $('input').val('')
+          $('.searchInput').val('')
 
       $.ajax({
         url: `/products/api?name=` + userInput + ``,
