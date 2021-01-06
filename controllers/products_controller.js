@@ -33,6 +33,14 @@ products.get('/api', (req, res) => {
         }
       })
     }
+  }else if(req.query.id){
+    if(typeof req.query.id.toString() != 'undefined'){
+      product.filter(function(product){
+        if(product.id.toString() === req.query.id.toString()){
+          response.push(product)
+        }
+      })
+    }
   }else{
     if(typeof req.query.name != 'undefined'){
       product.filter(function(product){

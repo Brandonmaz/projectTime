@@ -1,5 +1,6 @@
 const product = [
   {
+    id: 1,
     name: 'Dead of Winter',
     company: 'TableTop Simulator',
     img: 'https://static1.squarespace.com/static/590b935dd482e9f9e5c8d394/590b9565be659408c67f7cd1/59718745d1758e4049352dc9/1500659145807/DoW.jpg?format=1500w',
@@ -12,6 +13,7 @@ const product = [
     qty: 1
   },
   {
+    id: 2,
     name: 'Isle of Skye',
     company: 'TableTop Simulator',
     img: 'https://steamuserimages-a.akamaihd.net/ugc/367408984857559714/43906691813A878E0A37C2DF658550D386F56C3E/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true',
@@ -24,6 +26,7 @@ const product = [
     qty: 2
   },
   {
+    id: 3,
     name: 'Clank!',
     company: 'TableTop Simulator',
     img: 'https://www.boardgamequest.com/wp-content/uploads/2016/11/Clank.jpg',
@@ -37,6 +40,7 @@ const product = [
     qty: 3
   },
   {
+    id: 4,
     name: 'King of Tokyo',
     company: 'TableTop Simulator',
     img: 'https://i5.walmartimages.com/asr/8b3292f6-4c97-4c5c-a54a-cd53dae8deb8_1.fc95c893bb572e82fe308d81ec948bc6.jpeg',
@@ -49,6 +53,7 @@ const product = [
     qty: 4
   },
   {
+    id: 5,
     name: 'Burgle bros',
     company: 'TableTop Simulator',
     img: 'https://www.ultraboardgames.com/img/slideshow/burgle-bros.jpg',
@@ -61,6 +66,7 @@ const product = [
     qty: 5
   },
   {
+    id: 6,
     name: 'Scythe',
     company: 'TableTop Simulator',
     img: 'https://www.mindgames.ca/content/images/thumbs/0005711_scythe-board-game_550.jpeg',
@@ -73,6 +79,7 @@ const product = [
     qty: 6
   },
   {
+    id: 7,
     name: 'Dawn of the Zeds',
     company: 'TableTop Simulator',
     img: 'https://cf.geekdo-images.com/dy0bxs8k0gEIn1JwelJXAQ__opengraph/img/q-DHum2TkOgH-VYwisip1yp5eLw=/fit-in/1200x630/filters:strip_icc()/pic2453079.jpg',
@@ -84,7 +91,7 @@ const product = [
     price: 7.99,
     qty: 7
   },
-  {
+  {id: 8,
     name: 'Gloomhaven',
     company: 'TableTop Simulator',
     img: 'https://thesolomeeple.files.wordpress.com/2018/06/imgp6559.jpg',
@@ -97,6 +104,7 @@ const product = [
     qty: 8
   },
   {
+    id: 9,
     name: 'Azul',
     company: 'TableTop Simulator',
     img: 'https://www.boardgamequest.com/wp-content/uploads/2017/10/Azul.jpg',
@@ -109,6 +117,7 @@ const product = [
     qty: 9
   },
   {
+    id: 10,
     name: 'Argh',
     company: 'Tabletopia',
     img: "https://cf.geekdo-images.com/sjZ_JoOsxeEyJUo8eEvdFQ__itemrep/img/yw425cwtpUOWzq7wfoYja6lA__I=/fit-in/246x300/filters:strip_icc()/pic3707559.gif",
@@ -121,6 +130,7 @@ const product = [
     qty: 10
   },
   {
+    id: 11,
     name: 'Roll Player',
     company: 'Tabletopia',
     img: 'https://cf.geekdo-images.com/enmQAOQl99U6wiQvZoL5GQ__itemrep/img/lEXrmts1iZPtAufiXjzxk6Ik9rg=/fit-in/246x300/filters:strip_icc()/pic2556921.jpg',
@@ -133,6 +143,7 @@ const product = [
     qty: 1
   },
   {
+    id: 12,
     name: 'Paperback',
     company: 'Tabletopia',
     img: "https://boardgaming.com/wp-content/uploads/2014/02/Paperback.jpg",
@@ -145,6 +156,7 @@ const product = [
     qty: 2
   },
   {
+    id: 13,
     name: 'Santorini',
     company: 'Tabletopia',
     img: 'https://www.firestormgames.co.uk/uploads/images/products/ANewportStockUploads/39021-santorini.png',
@@ -157,6 +169,7 @@ const product = [
     qty: 3
   },
   {
+    id: 14,
     name: 'Cartographers',
     company: 'Tabletopia',
     img: 'https://cf.geekdo-images.com/GifbnAmsA4lfEcDkeaC9VA__opengraph/img/s8bFcNqzPel3E2ryY7RCY-Db9W4=/fit-in/1200x630/filters:strip_icc()/pic4397932.png',
@@ -169,6 +182,7 @@ const product = [
     qty: 4
   },
   {
+    id: 15,
     name: 'Secret Hitler',
     company: 'Tabletopia',
     img: 'https://cf.geekdo-images.com/rAQ3hIXoH6xDcj41v9iqCg__opengraph/img/5h_P_bH6ssOyoKlpVDxc9W-zWr0=/fit-in/1200x630/filters:strip_icc()/pic5164305.jpg',
@@ -181,6 +195,7 @@ const product = [
     qty: 5
   },
   {
+    id: 16,
     name: 'Railroad Ink',
     company: 'Tabletopia',
     img: 'https://www.boardgamequest.com/wp-content/uploads/2020/09/Railroad-Ink.jpg',
@@ -193,6 +208,7 @@ const product = [
     qty: 6
   },
   {
+    id: 17,
     name: 'K2',
     company: 'Tabletopia',
     img: 'https://www.boardgamequest.com/wp-content/uploads/2015/05/K2-Game.jpg',
@@ -205,6 +221,7 @@ const product = [
     qty: 7
   },
   {
+    id: 18,
     name: 'Stockpile',
     company: 'Tabletopia',
     img: 'https://cf.geekdo-images.com/T7CvF_oFrEMNgS0Eyrbr5g__opengraph/img/FYnJZ2ziE7yTxLU4wboyLvArL1A=/fit-in/1200x630/filters:strip_icc()/pic2537618.jpg',
