@@ -58,13 +58,8 @@ $(() => {
                   window.location.pathname = '/tableTopia/5ff5e27d6b0f6208d74d7b97/showTableTopia/'
                 }else if(search === 18){
                   window.location.pathname = '/tableTopia/5ff5e27d6b0f6208d74d7b98/showTableTop/'
-                }else {
-                  alert('Sorry this game does not match our database, please try again.')
                 }
-
             }
-            // window.location.pathname = `products/tableTopia/${data[0].id}/showTableTopia`
-            // window.location.replace('')
 
       }, (error) => {
         alert(`You must have spelled something wrong. Please check your spelling and try again`)

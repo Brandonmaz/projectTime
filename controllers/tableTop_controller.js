@@ -1,6 +1,69 @@
 const express = require('express')
 const TableTop = require('../models/tableTop.js')
+const tableTopProduct = require('../data/product.js')
 const tableTop = express.Router()
+
+//=============Searchable API==================
+
+tableTop.get('/api', (req, res) => {
+  var response = []
+  if(req.query.qty){
+    if(typeof req.query.qty.toString() != 'undefined'){
+      tableTopProduct.filter(function(tableTopProduct){
+        if(tableTopProduct.qty.toString() === req.query.qty.toString()){
+          response.push(tableTopProduct)
+        }
+      })
+    }
+  }else if(req.query.price){
+    if(typeof req.query.price.toString() != 'undefined'){
+      tableTopProduct.filter(function(tableTopProduct){
+        if(tableTopProduct.price.toString() === req.query.price.toString()){
+          response.push(tableTopProduct)
+        }
+      })
+    }
+  }else if(req.query.id){
+    if(typeof req.query.id.toString() != 'undefined'){
+      tableTopProduct.filter(function(tableTopProduct){
+        if(tableTopProduct.id.toString() === req.query.id.toString()){
+          response.push(tableTopProduct)
+        }
+      })
+    }
+  }else{
+    if(typeof req.query.name != 'undefined'){
+      tableTopProduct.filter(function(tableTopProduct){
+        if(tableTopProduct.name.toLowerCase() === req.query.name.toLowerCase()){
+          response.push(tableTopProduct)
+        }
+      })
+    }
+    if(typeof req.query.players != 'undefined'){
+      tableTopProduct.filter(function(tableTopProduct){
+        if(tableTopProduct.players === req.query.players){
+          response.push(tableTopProduct)
+        }
+      })
+    }
+    if(typeof req.query.company != 'undefined'){
+      tableTopProduct.filter(function(tableTopProduct){
+        if(tableTopProduct.company.toLowerCase() === req.query.company.toLowerCase()){
+          response.push(tableTopProduct)
+        }
+      })
+    }
+
+  }
+
+
+  response = _.uniqBy(response)
+
+  if(Object.keys(req.query).length === 0){
+    response = tableTopProduct
+  }
+  res.json(response)
+})
 
 //====================EDIT========================
 tableTop.get('/:id/editTableTop', (req, res) => {

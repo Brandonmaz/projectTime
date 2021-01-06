@@ -21,8 +21,11 @@ a {
 .navbar {
   margin: 10px;
   /* border-radius: 5px; */
+}
+.linkedin {
 
 }
+
 
 .dropdown-toggle {
   margin-top: -25px;
@@ -68,7 +71,9 @@ a {
 .col-md-7 {
   padding: 30px;
 }
-
+#linkedin {
+  margin: 0 0 0 20px;;
+}
 .btn-secondary {
   color: ghostwhite;
   font-size: 20px;

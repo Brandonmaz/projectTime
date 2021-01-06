@@ -1,7 +1,68 @@
 const express = require('express')
 const TableTopia = require('../models/tableTopia.js')
+const tableTopiaProduct = require('../data/product.js')
 const tableTopia = express.Router()
+//=============Searchable API==================
 
+tableTopia.get('/api', (req, res) => {
+  var response = []
+  if(req.query.qty){
+    if(typeof req.query.qty.toString() != 'undefined'){
+      tableTopiaProduct.filter(function(tableTopiaProduct){
+        if(tableTopiaProduct.qty.toString() === req.query.qty.toString()){
+          response.push(tableTopiaProduct)
+        }
+      })
+    }
+  }else if(req.query.price){
+    if(typeof req.query.price.toString() != 'undefined'){
+      tableTopiaProduct.filter(function(tableTopiaProduct){
+        if(tableTopiaProduct.price.toString() === req.query.price.toString()){
+          response.push(tableTopiaProduct)
+        }
+      })
+    }
+  }else if(req.query.id){
+    if(typeof req.query.id.toString() != 'undefined'){
+      tableTopiaProduct.filter(function(tableTopiaProduct){
+        if(tableTopiaProduct.id.toString() === req.query.id.toString()){
+          response.push(tableTopiaProduct)
+        }
+      })
+    }
+  }else{
+    if(typeof req.query.name != 'undefined'){
+      tableTopiaProduct.filter(function(tableTopiaProduct){
+        if(tableTopiaProduct.name.toLowerCase() === req.query.name.toLowerCase()){
+          response.push(tableTopiaProduct)
+        }
+      })
+    }
+    if(typeof req.query.players != 'undefined'){
+      tableTopiaProduct.filter(function(tableTopiaProduct){
+        if(tableTopiaProduct.players === req.query.players){
+          response.push(tableTopiaProduct)
+        }
+      })
+    }
+    if(typeof req.query.company != 'undefined'){
+      tableTopiaProduct.filter(function(tableTopiaProduct){
+        if(tableTopiaProduct.company.toLowerCase() === req.query.company.toLowerCase()){
+          response.push(tableTopiaProduct)
+        }
+      })
+    }
+
+  }
+
+
+  response = _.uniqBy(response)
+
+  if(Object.keys(req.query).length === 0){
+    response = tableTopiaProduct
+  }
+  res.json(response)
+})
 //====================EDIT========================
 tableTopia.get('/:id/editTableTopia', (req, res) => {
   TableTopia.findById(req.params.id, (error, tableTopia) => {

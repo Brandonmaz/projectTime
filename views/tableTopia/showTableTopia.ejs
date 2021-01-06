@@ -76,14 +76,7 @@
               </li>
             <%}%>
         </ul>
-        <form class="d-flex">
-          <% if(currentUser){%>
-          <input class="form-control me-2" type="search" placeholder="Welcome <%= currentUser.username%>" aria-label="Search">
-          <%}else{%>
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <%}%>
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
       </div>
     </div>
   </nav>
@@ -101,7 +94,7 @@
             </div>
             <div class="flip-box-back" id="tabletopia">
               <img src="<%=tableTopia.img%>" width="100%" height="100%">
-              <p><a class="btn btn-secondary" href="/tableTopia/" role="button">Back &raquo;</a></p>
+              <p><a class="btn btn-secondary" href="/tableTopia" role="button">Back &raquo;</a></p>
             </div>
           </div>
         </div>
