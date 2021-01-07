@@ -18,6 +18,9 @@
 .btn-secondary{
   margin-top: -20rem;
 }
+footer {
+  float: left;
+}
 
 
 @media (min-width: 1400px) {
@@ -28,6 +31,10 @@
   .col-md-5 {
     width: 600px;
     height: 450px;
+  }
+  footer {
+    margin-top: 15em;
+    float: left;
   }
 
 
