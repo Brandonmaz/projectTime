@@ -89,7 +89,7 @@
           <legend><h1 class="name"><%= currentUser.username%>,</h1>
             <h2>Edit <%=tableTopia.name%></h2>
           </legend>
-          <label for="name">Name</label>
+          <!-- <label for="name">Name</label>
           <input type="text" name="name" value="<%=tableTopia.name%>">
           <label for="img">Image</label>
           <input type="text" name="img" value="<%=tableTopia.img%>">
@@ -100,7 +100,7 @@
           <label for="img">Image Carousel</label>
           <input type="text" name="<%=tableTopia.img3%>">
           <label for="players">Players</label>
-          <input type="text" name="players" value="<%=tableTopia.players%>">
+          <input type="text" name="players" value="<%=tableTopia.players%>"> -->
           <label for="price">Price</label>
           <input type="text" name="price" value="<%=tableTopia.price%>">
           <label for="qty">Quantity</label>
@@ -109,14 +109,14 @@
         <div class="buttons">
         <input class="btn btn-sm btn-outline-secondary" type="submit" value="Submit Changes">
       </form>
-      <form action="/tableTopia/<%=tableTopia.id%>?_method=DELETE" method="POST">
+      <!-- <form action="/tableTopia/<%=tableTopia.id%>?_method=DELETE" method="POST">
         <input class="btn btn-sm btn-outline-secondary" type="submit" value="DELETE">
-      </form>
+      </form> -->
       </div>
-      <fieldset class="edit-info">
+      <!-- <fieldset class="edit-info">
         <label for="description">Description</label>
         <textarea id="description"type="text" name="description"><%=tableTopia.description%></textarea>
-      </fieldset>
+      </fieldset> -->
       <button class="btn btn-sm btn-outline-secondary" type="button" name="button">
         <a class="a-button" href="/tableTopia">Back to Tabletopia</a>
       </button>
